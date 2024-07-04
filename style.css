@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  font-size: 12px;
+  --black: #000;
+  --white: #fff;
+  --gray: #555;
+  --blue: blue;
+  --dark: #333;
+  --light: #aaa;
+}
+
+span,
+div {
+  font-size: 12px;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.material-symbols-outlined {
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+  cursor: pointer;
+  gap: 4px;
+}
+
+.footer-item-active,
+.footer-item:hover {
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+  max-width: 500px;
+  margin: auto;
+  min-height: 0;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+}
+
+#page-header {
+  padding: 0 24px;
+}
+
+.toggle {
+  position: relative;
+  background-color: var(--gray);
+  border-radius: 20px;
+  width: 44px;
+  padding: 4px;
+  height: 24px;
+}
+
+.toggle-active {
+  background-color: var(--blue);
+}
+
+.toggle-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  margin: 4px;
+  top: 0;
+}
+
+.toggle-bullet-inactive {
+  left: 0;
+}
+
+.toggle-bullet-active {
+  right: 0;
+}
+
+.display-hour {
+  font-size: 2rem;
+}
+
+.display-hour-info {
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alarm-item {
+  display: flex;
+  background-color: var(--dark);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.circle-floating-button {
+  background-color: var(--dark);
+  position: absolute;
+  bottom: 92px;
+  right: 32px;
+  padding: 4px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.huge {
+  font-size: 3rem !important;
+}

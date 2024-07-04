@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Clock</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,400,0,0" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet" />
+
+    <script
+      src="toggle.js"
+      defer></script>
+
+    <script
+      src="router.js"
+      defer></script>
+
+    <script
+      src="alarms.js"
+      defer></script>
+
+    <script
+      src="main.js"
+      defer></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="topbar">
+        <div></div>
+        <h2 id="topbar-title">Test</h2>
+        <span class="material-symbols-rounded"> more_vert </span>
+      </div>
+
+      <div class="main-content">
+        <div id="alarm-page">
+          <h1 id="page-header">Alarm</h1>
+          <div id="alarm-list"></div>
+
+          <div
+            class="circle-floating-button"
+            id="add-alarm-button">
+            <span class="material-symbols-rounded text-blue huge"> add </span>
+          </div>
+        </div>
+        <div id="clock-page">
+          <h1 id="page-header">Clock</h1>
+          <div class="circle-floating-button">
+            <span class="material-symbols-rounded text-blue huge"> add </span>
+          </div>
+        </div>
+        <div id="stop-watch-page">
+          <h1 id="page-header">Stopwatch</h1>
+        </div>
+        <div id="timer-page">
+          <h1 id="page-header">Timer</h1>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div
+          class="footer-item footer-item-active"
+          id="alarm-page-trigger">
+          <span class="material-symbols-rounded"> alarm </span>
+          <span>Alarm</span>
+        </div>
+
+        <div
+          class="footer-item"
+          id="clock-page-trigger">
+          <span class="material-symbols-rounded"> schedule </span>
+          <span>Clock</span>
+        </div>
+
+        <div
+          class="footer-item"
+          id="stop-watch-page-trigger">
+          <span class="material-symbols-rounded"> timer </span>
+          <span>Stopwatch</span>
+        </div>
+
+        <div
+          class="footer-item"
+          id="timer-page-trigger">
+          <span class="material-symbols-rounded"> hourglass_top </span>
+          <span>Timer</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
